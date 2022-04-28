@@ -1,4 +1,3 @@
-
 <template>
     <div>
         <div class="row justify-content-center">
@@ -21,13 +20,13 @@
         </div>
         <article>
             <div class="row justify-content-center mb-4 mt-4">
-                <div class="col-md-7 col-12 mt-3 posts" v-on:click="test(1)">
+                <div class="col-md-7 col-12 mt-3 posts" v-on:click="test(1)" v-for="y in data" :key="y.id">
                     <div class="container">
                         <div class="card">
                             <div class="card-body">
-                                <h2 class="card-title">Javascript Dasar</h2>
-                                <p class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio vel perferendis.</p>
-                                <p class="text-muted">January 20, 2021 Mohamad Rizky Isa</p>
+                                <h2 class="card-title">{{ y.judul }}</h2>
+                                <p class="text-muted"></p>
+                                <p class="text-muted">{{y.waktu}} <strong>{{y.author}}</strong></p>
                             </div>
                         </div>
                     </div>
@@ -38,14 +37,28 @@
 </template>
 
 <script>
+import Posts from '../Posts/blog.json'
 export default {
-  name: 'Hero',
-  methods:{
-      async test(id)
-      {
-          alert(id);
-      }
-  }
+    name: 'Hero',
+    data(){
+        return{
+            data:[]
+        }
+    },
+    methods:{
+        async test(id)
+        {
+            console.log(Posts[0].judul)
+        },
+        async create()
+        {
+            this.data = Posts
+        }
+    },
+    created(){
+        this.create();
+    }
+
 }
 </script>
 
