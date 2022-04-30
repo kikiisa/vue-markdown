@@ -1,14 +1,15 @@
 <template>
     <div>
         <div class="row justify-content-center">
-            <div class="col-md-7">
+            <div class="col-md-12">
                 <div class="container top">
-                  <h1 class="title">Kiky code</h1>
+                  <h1 class="title">Kiky Porfolio</h1>
                   <div class="child-text mt-3">
-                    <p>Welcome to demo of hugo’s theme PaperMod.</p>
-                    <p>PaperMod is a <strong>simple but fast and responsive</strong> theme with useful feature-set that enhances UX</p>
-                    <p>Do give a 🌟 on Github !</p>
-                    <p>PaperMod is based on theme Paper.</p>
+                    <p>Welcome to <strong>Kiky Porfolio | Quote | Blog .</strong></p>
+                    <p>Tempat ini mengenai Jati diri  gua cuy</p>
+                    <p><strong>Apapun segala postingan/tweet tidak mewakili instansi manapun murni dari pemikiran sendiri</strong></p>
+                    <p>cita cita saya adalah menjadi seorang 🌟 Programer di indonesia !</p>
+                    <p>Pokonya ana orang <strong>GORONTALO</strong></p>
                     <div class="social mt-3">
                         <a><i class="fa-brands fa-github fa-2x"></i></a>
                         <a><i class="fa-brands fa-facebook fa-2x"></i></a>
@@ -19,16 +20,18 @@
             </div>
         </div>
         <article>
-            <div class="row justify-content-center mb-4 mt-4">
-                <div class="col-md-7 col-12 mt-3 posts" v-on:click="test(1)" v-for="y in data" :key="y.id">
-                    <div class="container">
-                        <div class="card">
-                            <div class="card-body">
-                                <h2 class="card-title">{{ y.judul }}</h2>
-                                <p class="text-muted"></p>
-                                <p class="text-muted">{{y.waktu}} <strong>{{y.author}}</strong></p>
+            <div class="container">
+                <div class="row justify-content-center mb-4 mt-4">
+                    <div class="col-md-4 col-12 mt-3 posts" v-on:click="test(1)" v-for="y in data" :key="y.id">
+                            <div class="card">
+                                <div class="card-body">
+                                    <i class="fa-solid fa-quote-left fa-1x"></i>
+                                    <blockquote class="text-center mt-4">
+                                        {{y.quotes}}
+                                    </blockquote>
+                                    <p class="text-muted">{{y.waktu}} <strong>{{y.author}}</strong></p>
+                                </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -64,6 +67,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+    blockquote{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 500;
+    }
     .posts{
         cursor: pointer;
     }
@@ -87,6 +94,7 @@ export default {
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 14px;
     }
+
     .title{
         font-weight: bold;
         font-size:34px;

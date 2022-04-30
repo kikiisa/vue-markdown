@@ -17,13 +17,7 @@ export default {
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <router-link class="nav-link" to="/pemrograman">Pemrograman</router-link>
-                        </li>
-                        <li class="nav-item">
-                            <router-link class="nav-link" to="/dokumentasi">Dokumentasi</router-link>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
+                            <router-link to="/blog" class="nav-link">Blog</router-link>
                         </li>
                     </ul>
                 </div>

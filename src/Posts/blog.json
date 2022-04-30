@@ -1,7 +1,8 @@
 [
     {
-        "judul":"Javascript Object",
+        "id":1,
         "author":"Mohamad Rizky Isa",
+        "quotes":"Tetaplah hidup walaupun tak berguna",
         "file":"",
         "waktu":"28/04/2022",
         "category":1
