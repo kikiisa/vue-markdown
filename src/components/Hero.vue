@@ -5,7 +5,7 @@
                 <div class="container top">
                   <h1 class="title">Kiky Porfolio</h1>
                   <div class="child-text mt-3">
-                    <p>Welcome to <strong>Kiky Porfolio | Quote | Blog .</strong></p>
+                    <p>Welcome to <strong>Kiky Porfolio | Quote | Blog | Course Online.</strong></p>
                     <p>Tempat ini mengenai Jati diri  gua cuy</p>
                     <p><strong>Apapun segala postingan/tweet tidak mewakili instansi manapun murni dari pemikiran sendiri</strong></p>
                     <p>cita cita saya adalah menjadi seorang 🌟 Programer di indonesia !</p>
@@ -19,23 +19,21 @@
                 </div>
             </div>
         </div>
-        <article>
-            <div class="container">
-                <div class="row justify-content-center mb-4 mt-4">
-                    <div class="col-md-4 col-12 mt-3 posts" v-on:click="test(1)" v-for="y in data" :key="y.id">
-                            <div class="card">
-                                <div class="card-body">
-                                    <i class="fa-solid fa-quote-left fa-1x"></i>
-                                    <blockquote class="text-center mt-4">
-                                        {{y.quotes}}
-                                    </blockquote>
-                                    <p class="text-muted">{{y.waktu}} <strong>{{y.author}}</strong></p>
-                                </div>
+        <div class="container quote">
+            <div class="row justify-content-center mb-4 mt-4">
+                <div class="col-md-6 col-12 mt-3 posts" v-on:click="test(1)" v-for="y in data" :key="y.id">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <i class="fa-solid fa-quote-left fa-1x"></i>
+                                <blockquote class="text-center mt-4">
+                                    {{y.quotes}}
+                                </blockquote>
+                                <p class="text-muted">{{y.waktu}} <strong>{{y.author}}</strong></p>
                             </div>
-                    </div>
+                        </div>
                 </div>
             </div>
-        </article>
+        </div>
     </div>
 </template>
 
@@ -74,7 +72,7 @@ export default {
     .posts{
         cursor: pointer;
     }
-    article{
+    .container .quote{
         margin-top: 100px;
     }
     .card{

@@ -6,8 +6,9 @@ body{
      background-color:#F5F5F5 ;
      
 }
-::-webkit-scrollbar{
-    display: none;
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 router-link-exact-active {
   color: #42b983;

@@ -17,6 +17,12 @@ export default {
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
+                            <router-link to="/blog" class="nav-link">Shop</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <a to="/blog" class="nav-link">Course Online</a>
+                        </li>
+                        <li class="nav-item">
                             <router-link to="/blog" class="nav-link">Blog</router-link>
                         </li>
                     </ul>
