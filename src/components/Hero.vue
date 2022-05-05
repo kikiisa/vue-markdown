@@ -8,7 +8,7 @@
                     <p>Welcome to <strong>Kiky Porfolio | Quote | Blog | Course Online.</strong></p>
                     <p>Tempat ini mengenai Jati diri  gua cuy</p>
                     <p><strong>Apapun segala postingan/tweet tidak mewakili instansi manapun murni dari pemikiran sendiri</strong></p>
-                    <p>cita cita saya adalah menjadi seorang 🌟 Programer di indonesia !</p>
+                    <p>cita cita saya adalah menjadi seorang 🌟 Dosen Hebat di indonesia ! Bahkan ingin menjadi seorang REKTOR Aminnn</p>
                     <p>Pokonya ana orang <strong>GORONTALO</strong></p>
                     <div class="social mt-3">
                         <a><i class="fa-brands fa-github fa-2x"></i></a>
