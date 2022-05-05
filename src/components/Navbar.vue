@@ -5,7 +5,7 @@ export default {
 </script>
 <template>
     <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container navigasi">
                 <router-link class="navbar-brand" to="/">
                     <i class="fa-solid fa-cube"></i>
