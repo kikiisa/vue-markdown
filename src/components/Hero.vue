@@ -3,12 +3,12 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="container top">
-                  <h1 class="title">Kiky Porfolio</h1>
+                  <h1 class="title">Kiky Code</h1>
                   <div class="child-text mt-3">
-                    <p>Welcome to <strong>Kiky Porfolio | Quote | Blog | Course Online.</strong></p>
+                    <p>Welcome to <strong>Kiky Code | Quote | Blog | Course Online.</strong></p>
                     <p>Tempat ini mengenai Jati diri  gua cuy</p>
                     <p><strong>Apapun segala postingan/tweet tidak mewakili instansi manapun murni dari pemikiran sendiri</strong></p>
-                    <p>cita cita saya adalah menjadi seorang 🌟 Dosen Hebat di indonesia ! Bahkan ingin menjadi seorang REKTOR Aminnn</p>
+                    <p>cita cita saya adalah menjadi seorang 🌟 Dosen Hebat di indonesia ! Bahkan ingin menjadi seorang REKTOR</p>
                     <p>Pokonya ana orang <strong>GORONTALO</strong></p>
                     <div class="social mt-3">
                         <a><i class="fa-brands fa-github fa-2x"></i></a>
@@ -22,21 +22,20 @@
         <div class="container quote">
             <div class="row justify-content-center mb-4 mt-4">
                 <div class="col-md-6 col-12 mt-3 posts" v-on:click="test(1)" v-for="y in data" :key="y.id">
-                        <div class="card shadow">
-                            <div class="card-body">
-                                <i class="fa-solid fa-quote-left fa-1x"></i>
-                                <blockquote class="text-center mt-4">
-                                    {{y.quotes}}
-                                </blockquote>
-                                <p class="text-muted">{{y.waktu}} <strong>{{y.author}}</strong></p>
-                            </div>
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <i class="fa-solid fa-quote-left fa-1x"></i>
+                            <blockquote class="text-center mt-4">
+                                {{y.quotes}}
+                            </blockquote>
+                            <p class="text-muted">{{y.waktu}} <strong>{{y.author}}</strong></p>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </template>
-
 <script>
 import Posts from '../Posts/blog.json'
 export default {
@@ -66,7 +65,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     blockquote{
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: 500;
     }
     .posts{
@@ -77,11 +75,10 @@ export default {
     }
     .card{
         border-color: white;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         border-radius: 9px;
     }
     .top{
-        margin-top:90px;
+        margin-top:50px;
     }
 
     .card-title{
@@ -89,7 +86,6 @@ export default {
     }
 
     .text-muted{
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 14px;
     }
 
@@ -98,7 +94,6 @@ export default {
         font-size:34px;
     }
     .child-text p{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 16px;
         margin-bottom: 1px;
     }

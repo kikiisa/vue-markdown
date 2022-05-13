@@ -4,7 +4,7 @@
         "author":"Mohamad Rizky Isa",
         "quotes":"Lagi sibuk ngoding, ga sempat ayang ayangan. soalnya rekening yang kosong lebih sedih daripada hati yang kosong KWKWKWKWKWK",
         "file":"",
-        "waktu":"05-5-2022",
+        "waktu":"05-05-2022",
         "category":1
     },
     {
@@ -12,7 +12,15 @@
         "author":"Mohamad Rizky Isa",
         "quotes":"~PROGRAMER~ Seseorang yang memiliki hubungan lebih mendalam dan lebih bermakna dengan komputer daripada dengan manusia",
         "file":"",
-        "waktu":"05-5-2022",
+        "waktu":"05-05-2022",
+        "category":1
+    },
+     {
+        "id":3,
+        "author":"Bagus Teknik Anarkis",
+        "quotes":"Ingat!! Yang Kalian bayar itu bukan seberapa cepat dan seberapa mudah apa yang dia kerjakan.. tapi proses dan lamanya waktu yang dia pakai untuk belajar hal yang kalian tidak pelajari ",
+        "file":"",
+        "waktu":"13-05-2022",
         "category":1
     }
 ]

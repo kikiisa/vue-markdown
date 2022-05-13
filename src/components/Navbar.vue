@@ -5,7 +5,7 @@ export default {
 </script>
 <template>
     <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
             <div class="container navigasi">
                 <router-link class="navbar-brand" to="/">
                     <i class="fa-solid fa-cube"></i>
@@ -16,15 +16,13 @@ export default {
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <router-link to="/blog" class="nav-link">Shop</router-link>
+                        <li  class="menu-1 nav-item">
+                            <router-link to="/course" class="menu-2 nav-link">Course Online</router-link>
                         </li>
-                        <li class="nav-item">
-                            <a to="/blog" class="nav-link">Course Online</a>
+                        <li class="menu-1 nav-item">
+                            <router-link to="/blog" class="menu-2 nav-link">Blog</router-link>
                         </li>
-                        <li class="nav-item">
-                            <router-link to="/blog" class="nav-link">Blog</router-link>
-                        </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -33,8 +31,21 @@ export default {
 </template>
 <style scoped>
     .navbar-brand{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-weight: bold;
         font-size: 24px;
+    }
+    .cart{
+        border-color: transparent;
+        background-color: transparent;
+    }
+    .menu-2
+    {
+        color:black;
+        font-family:'Montserrat', sans-serif;
+        text-transform: uppercase;
+    }
+    .total-cart{
+        margin-left: 2px;
     }
 </style>
